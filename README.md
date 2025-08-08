@@ -1,115 +1,108 @@
-# 🧪 Comparative Profiling of Python, C++, Java, and Go
+# 🧪 Comparative Profiling of Python, C++, Java, and Go  
+*A Performance Benchmarking Study*
 
-A performance benchmarking study of four popular programming languages — Python, C++, Java, and Go — across key software metrics using real-world computational tasks.
-
-Author: Bineesh Mathew  
-Institution: St. Xavier’s College, Mumbai  
-Year: 2025
+**📌 Author**: Bineesh Mathew  
+**🏛️ Institution**: St. Xavier’s College, Mumbai  
+**📅 Year**: 2025  
 
 ---
 
 ## 🎯 Objective
 
-This project aims to evaluate and compare:
+This project presents a **comparative performance analysis** of four widely-used programming languages — **Python, C++, Java, and Go** — by evaluating them against common software metrics using real-world computational tasks.
 
-- Execution Time  
-- Memory Usage  
-- Load Handling Stability  
-- Debugging Simplicity  
+### Key Metrics Evaluated:
+- ⏱️ **Execution Time**  
+- 💾 **Memory Usage**  
+- ⚙️ **Load Handling Stability**  
+- 🐞 **Debugging Simplicity**
 
-All benchmarks were implemented using simple baseline logic to ensure fairness, without any specialized libraries or frameworks.
-
----
-
-## 🧪 Benchmark Tasks
-
-Each task is designed to reflect common computational and I/O operations:
-
-| Task                | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| Fibonacci           | Recursive calculation of F(35); tests CPU usage and function call overhead |
-| File I/O            | Read/write a 100MB CSV file; tests disk performance                         |
-| Matrix Multiplication | Multiply two 1000×1000 matrices; evaluates processing power               |
-| Load Testing        | Send 1000 HTTP requests; tests concurrency and runtime stability            |
+> 🔍 *Note: All implementations were kept minimal and framework-independent to maintain benchmarking fairness.*
 
 ---
 
-## 🛠️ Profiling Tools Used
+## 🧪 Benchmarking Tasks
 
-Language-specific profiling tools were used to measure performance:
+The benchmarking suite includes tasks designed to reflect realistic computational workloads:
 
-- Python: `psutil`, `tracemalloc`, `time`
-- C++: `std::chrono`, `GetProcessMemoryInfo`
-- Java: `ThreadMXBean`, `MemoryMXBean`
-- Go: `runtime.MemStats`, `pprof`
+| 🧮 Task                 | 🔍 Description                                                                 |
+|------------------------|--------------------------------------------------------------------------------|
+| **Fibonacci**          | Recursive computation of F(35); tests CPU load and recursion depth            |
+| **File I/O**           | Read and write operations on a 100MB CSV file; tests disk interaction speed   |
+| **Matrix Multiplication** | Multiplying two 1000×1000 matrices; evaluates CPU-bound computation         |
+| **Load Testing**       | Sending 1000 HTTP GET requests; tests concurrency support and runtime stability|
 
 ---
 
-## 📊 Key Results
+## 🛠️ Tools & Profiling Methods
 
-| Metric              | Best Performer | Lowest Performer |
-|---------------------|----------------|------------------|
-| Execution Time      | C++            | Python           |
-| Memory Efficiency   | Java           | Python           |
-| Load Stability      | C++            | Python           |
-| Debugging Simplicity| Python         | C++              |
+### 🐍 Python:
+- `psutil` (system performance)
+- `tracemalloc` (memory tracing)
+- `time` module (execution timing)
 
-### Summary
+### 💠 C++:
+- `std::chrono` (execution time)
+- `GetProcessMemoryInfo` (memory usage via Windows API)
 
-- **C++**: Fastest and most memory-efficient, but complex to debug  
-- **Go**: Offers a good balance between speed, concurrency, and simplicity  
-- **Java**: Very stable and memory-efficient  
-- **Python**: Easiest to develop and debug with, but slowest in performance
+### ☕ Java:
+- `ThreadMXBean` (CPU time)
+- `MemoryMXBean` (heap/non-heap memory stats)
+
+### 🐹 Go:
+- `runtime.MemStats` (memory profiling)
+- `pprof` (advanced performance profiling)
+
+---
+
+## 📊 Key Findings
+
+| **Metric**             | 🥇 **Best Performer** | 🐢 **Lowest Performer** |
+|------------------------|----------------------|--------------------------|
+| Execution Time         | **C++**              | **Python**               |
+| Memory Efficiency      | **Java**             | **Python**               |
+| Load Stability         | **C++**              | **Python**               |
+| Debugging Simplicity   | **Python**           | **C++**                  |
+
+### 📌 Summary
+
+- **C++**: 🧠 Blazing fast and memory efficient, but difficult to debug and maintain  
+- **Go**: ⚖️ Well-balanced in performance, concurrency, and ease of use  
+- **Java**: 💼 Offers great stability and efficient memory management  
+- **Python**: 🛠️ Developer-friendly and highly readable, but slower in raw execution
 
 ---
 
 ## 💻 System Configuration
 
-- OS: Windows 11 (64-bit)  
-- Processor: AMD Ryzen 7 7435HS  
-- RAM: 16 GB  
-- Language Versions:
-  - Python 3.10
-  - C++20 (MSVC)
-  - Java 17
-  - Go 1.19
-
----
-
-## 📁 Repository Structure
-├── Fibonacci/ # Recursive Fibonacci in all 4 languages
-├── IO/ # File I/O benchmarking scripts
-├── Matrix/ # Matrix multiplication code
-├── LoadTest/ # Load testing with 1000 HTTP requests
-├── Fibonacci.ipynb # Jupyter notebook 
-├── IO.ipynb
-├── Matrix.ipynb
-├── LoadTest.ipynb
-└── README.md
-
-Each `.ipynb` notebook contains all the codes together 
+| Specification       | Details                      |
+|---------------------|------------------------------|
+| **Operating System** | Windows 11 (64-bit)          |
+| **Processor**        | AMD Ryzen 7 7435HS           |
+| **RAM**              | 16 GB                        |
+| **Language Versions**| Python 3.10, C++20 (MSVC), Java 17, Go 1.19 |
 
 ---
 
 ## 🚧 Limitations
 
-- Tests were run on a single machine — results may vary with different hardware  
-- No performance-specific libraries (like NumPy or Boost) were used  
-- Concurrency models were kept simple for consistency across languages
+- Benchmarks were executed on a **single hardware configuration** — results may differ across systems  
+- **No performance-specific libraries** (e.g., NumPy, Boost) were used  
+- **Concurrency models** were kept basic for cross-language uniformity
 
 ---
 
 ## 📚 Citation
 
-**Project Title**: Comparative Profiling of Python and Three High-Performance Languages for Key Software Metrics  
-**Author**: Bineesh Mathew  
-**Institution**: St. Xavier’s College, Mumbai (2025)
+> **Title**: *Comparative Profiling of Python and Three High-Performance Languages for Key Software Metrics*  
+> **Author**: Bineesh Mathew  
+> **Institution**: St. Xavier’s College, Mumbai (2025)
 
 ---
 
 ## 📬 Contact
 
-For feedback or collaboration:
+For questions, suggestions, or collaboration opportunities:
 
-- Email: [c380bineesh@gmail.com](mailto:c380bineesh@gmail.com)  
-- GitHub: [github.com/ryuk38](https://github.com/ryuk38)
+- 📧 Email: [c380bineesh@gmail.com](mailto:c380bineesh@gmail.com)  
+- 💻 GitHub: [github.com/ryuk38](https://github.com/ryuk38)
